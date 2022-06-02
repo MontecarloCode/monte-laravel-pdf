@@ -26,21 +26,21 @@ To start using Laravel, add the Service Provider and the Facade to your `config/
 ```php
 'providers' => [
 	// ...
-	ZanySoft\LaravelPDF\PdfServiceProvider::class
+	montecarlocode\LaravelPDF\PdfServiceProvider::class
 ]
 ```
 
 ```php
 'aliases' => [
 	// ...
-	'PDF' => ZanySoft\LaravelPDF\Facades\PDF::class
+	'PDF' => montecarlocode\LaravelPDF\Facades\PDF::class
 ]
 ```
 
 ### Configuration
 The defaults configuration settings are set in `config/pdf.php`. Copy this file to your own config directory to modify the values. You can publish the config using this command:
 
-    php artisan vendor:publish --provider="ZanySoft\LaravelPDF\PdfServiceProvider"
+    php artisan vendor:publish --provider="montecarlocode\LaravelPDF\PdfServiceProvider"
 
 
 ### Basic Usage
